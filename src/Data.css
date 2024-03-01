@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+
+.data {
+    margin-top: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+.hour {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.data {
+    font-size: 13px;
+    font-weight: bold;
+}

@@ -1,38 +1,270 @@
+body {
+  background-color: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  width: 100wh;
+  height: 100vh;
+
+  display: flex;
+}
+
+
 .App {
+  margin-top: 50px;
+}
+
+.Login-container {
+  width: 300px;
+  height: 620px;
+  border: 10px solid rgb(27, 25, 25);
+  border-radius: 50px;
+  box-shadow: .5px .5px 3px 3px rgb(195, 164, 223);
+  background: linear-gradient(360deg, rgba(14, 14, 14, 1) 18%, rgba(88, 57, 162, 1) 44%, rgb(113, 115, 158) 62%, rgb(164, 136, 58) 71%, rgb(255, 179, 0) 100%, rgb(220, 185, 91) 100%);
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  margin-top: 60px;
+
+}
+
+
+
+.output-container {
+  width: 300px;
+  height: 620px;
+  border: 10px solid rgb(27, 25, 25);
+  border-radius: 50px;
+  box-shadow: .5px .5px 3px 3px rgb(195, 164, 223);
+  background: linear-gradient(360deg, rgba(14, 14, 14, 1) 18%, rgba(88, 57, 162, 1) 44%, rgb(113, 115, 158) 62%, rgb(164, 136, 58) 71%, rgb(255, 179, 0) 100%, rgb(220, 185, 91) 100%);
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  top: -100px;
+}
+
+
+.notch {
+  max-width: 100px;
+  height: 20px;
+  background-color: black;
+  border-radius: 15px;
+  justify-content: center;
+  margin-top: 8px;
+  margin-left: 100px;
+
+}
+
+.icons {
+  justify-content: space-evenly;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  margin-left: 210px;
+  margin-top: -20px;
+  margin-bottom: -25px;
+}
+
+.time {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.date-day {
+  height: 120px;
+  width: 260px;
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.input-design label {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(250, 250, 250);
+}
+
+.input-design input {
+  font-size: 15px;
+  border-radius: 15px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  text-align: center;
+  box-shadow: 1px 1px 12px 0px black;
+}
+
+
+.input-design button {
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.climate-description {
+  height: 130px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.climate-description p {
+  margin-top: -10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Output-design {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.output-result h3 {
+  height: 50px;
+  margin-top: 5px;
+}
+
+
+.weather-pic {
+  height: 30px;
+}
+
+.weather-pic img {
+  width: 100px;
+  height: 100px;
+}
+
+.clear {
+  background-color: red;
   color: white;
+  width: 100px;
+  height: 30px;
+  font-size: 17px;
+  border-radius: 30px;
+  position: relative;
+  justify-content: center;
+  margin-left: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.message {
+  height: 365px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description {
+  height: 60px;
+  line-height: 5px;
+  padding: 2px;
+}
+
+.des {
+  background-color: black;
+  height: 25px;
+  width: 200px;
+  color: white;
+  border-radius: 10px;
+  margin-left: 45px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.description p {
+  font-size: 15px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.temperature-container {
+  height: 75px;
+  line-height: 5px;
+  padding: 2px;
+  position: relative;
+}
+
+.temp-name {
+  margin-top: -10px;
+  color: black;
+  font-weight: bold;
+  height: 25px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.temp-name p {
+  background-color: goldenrod;
+  width: 150px;
+  height: 25px;
+  margin-left: 70px;
+  padding: 5px 5px 0px 5px;
+  border-radius: 50px;
+  margin-bottom: 0px;
+}
+
+.temperature {
+  position: relative;
+  justify-content: space-evenly;
+  height: 50%;
+  line-height: 0px;
+  padding: 2px;
+  display: flex;
+}
+
+.kelvin p,
+.celcius p,
+.Fahrenheit p {
+  height: 18px;
+  width: 80px;
+  padding: 3px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: beige;
+  line-height: 5px;
+}
+
+.lat-lan,
+.sunrise-set,
+.humidity-wind {
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.latitude,
+.longitude,
+.sunrise,
+.sunset,
+.humidity,
+.wind {
+  background-color: #eabb12f4;
+  box-shadow: rgb(169, 161, 161) 1px 1px 10px .5px;
+  height: 60px;
+  border-radius: 18px;
+  width: 120px;
+  margin-top: 5px;
+  justify-content: center;
+  text-align: center;
+  line-height: 8px;
+}
+
+
+.latitude p,
+.longitude p,
+.sunrise p,
+.sunset p,
+.humidity p,
+.wind p {
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
