@@ -1,3 +1,3 @@
-For demo link in below 
+For live demo link in below 
 
-http://localhost:3000/weather-app
+https://wdpraveenkrr.github.io/weather-app/
